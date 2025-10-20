@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do List App</title>
+    <link rel="icon" type="image/png" href="todofavicon copy.png" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="head">TO-DO List</h1>
+
+      <input type="text" id="taskInput" placeholder="Add a new task" />
+      <input type="datetime-local" id="taskDate" />
+      <input type="submit" id="addTask" value="Add Task" />
+      <br />
+      <div class="tasks-list">
+        <h3 class="list-head">Task List</h3>
+        <li class="task-item">
+          <strong class="tasks"> Learn New Skills</strong>
+          <blockquote>Explore new programming languages or tools.</blockquote>
+        </li>
+        <li class="task-item">
+          <strong class="tasks">Practice Problem-Solving</strong>
+          <blockquote>Solve coding challenges regularly.</blockquote>
+        </li>
+        <li class="task-item">
+          <strong class="tasks"> Work on Personal Projects</strong>
+          <blockquote>Build small apps or portfolio projects.</blockquote>
+        </li>
+        <li class="task-item">
+          <strong class="tasks"> Collaborate & Share Knowledge</strong>
+          <blockquote>Contribute to communities or open-source</blockquote>
+        </li>
+        <li class="task-item">
+          <strong class="tasks"> Stay Organized & Document Work</strong>
+          <blockquote>Track tasks and write clear notes.</blockquote>
+        </li>
+      </div>
+      <h4 class="checks">Check your list</h4>
+
+      <!-- we can do it this way but the next one is more appealing
+      <ul class="taskList">
+      <label> <input type="checkbox" /> learning web development</label>
+      <br />
+      <input type="checkbox" id="task2" />
+      <label for="task2">practice session</label>
+      <br />
+      <label> <input type="checkbox" /> reading tech blogs </label>
+      <br />
+      <br /> -->
+      <table cellpadding="10" cellspacing="0" class="taskTable">
+        <tr>
+          <th align="left">Task</th>
+          <th align="left">Date</th>
+          <th align="left">Time</th>
+          <th align="left">Check</th>
+        </tr>
+        <tr>
+          <td>Learn New Skills</td>
+          <td>05/10/2025</td>
+          <td>10:00 AM</td>
+          <td><input type="checkbox" /></td>
+        </tr>
+        <tr>
+          <td>Practice Problem-Solving</td>
+          <td>06/10/2025</td>
+          <td>11:00 AM</td>
+          <td><input type="checkbox" /></td>
+        </tr>
+        <tr>
+          <td>Work on Personal Projects</td>
+          <td>06/10/2025</td>
+          <td>9:00 PM</td>
+          <td><input type="checkbox" /></td>
+        </tr>
+        <tr>
+          <td>Collaborate & Share Knowledge</td>
+          <td>07/10/2025</td>
+          <td>2:00 PM</td>
+          <td><input type="checkbox" /></td>
+        </tr>
+        <tr>
+          <td>Stay Organized & Document Work</td>
+          <td>08/10/2025</td>
+          <td>4:00 PM</td>
+          <td><input type="checkbox" /></td>
+        </tr>
+      </table>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,89 @@
+body {
+  background-color: rgb(240, 240, 240);
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+.head {
+  color: rgb(10, 150, 36);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.container {
+  background-color: white;
+  padding: 0px 40px;
+  margin: 20px auto;
+  border-top: 5px solid green;
+  border-bottom: 5px solid green;
+}
+input[type="text"],
+input[type="datetime-local"] {
+  padding: 10px;
+  border: 2px solid #131111;
+  border-radius: 10px;
+  font-weight: bold;
+}
+input[type="submit"] {
+  padding: 10px 20px;
+  border-radius: 20px;
+  background-color: rgb(115, 247, 139);
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+input[type="submit"]:hover {
+  background-color: rgb(10, 150, 36);
+  color: white;
+}
+.list-head {
+  color: rgb(168, 122, 9);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 24px;
+}
+.task-item {
+  list-style-type: circle;
+  margin: 15px 10px;
+}
+.checks {
+  color: rgb(168, 122, 9);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 24px;
+}
+.taskTable {
+  width: 100%;
+  border: 3px solid black;
+  display: block;
+  margin-bottom: 30px;
+}
+th {
+  background-color: rgb(168, 122, 9);
+  color: white;
+  font-size: 20px;
+}
+input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  margin-left: 15px;
+}
+@media (max-width: 600px) {
+  .container {
+    width: 90%;
+    margin: 20px 20px;
+  }
+  input[type="text"],
+  input[type="datetime-local"],
+  input[type="submit"] {
+    width: 100%;
+    margin: 10px 0;
+    box-sizing: border-box;
+    font-size: 16px;
+  }
+  .taskTable {
+    font-size: 14px;
+  }
+}
